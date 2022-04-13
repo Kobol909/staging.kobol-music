@@ -1,0 +1,5 @@
+mysql_root_password: "{{ vault_mysql_root_password }}" # Define this variable in group_vars/staging/vault.yml
+project_root: /www/kobolmusic_842/public
+www_root: /www/kobolmusic_842/public
+web_user: kobolmusic
+web_group: www-data

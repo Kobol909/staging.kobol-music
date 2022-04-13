@@ -1,0 +1,19 @@
+# Created by trellis-cli v1.5.1
+# Documentation: https://docs.roots.io/trellis/master/wordpress-sites/
+
+wordpress_sites:
+  staging-kobolmusic.kinsta.cloud:
+    site_hosts:
+      - canonical: staging-kobolmusic.kinsta.cloud
+        redirect: www.staging-kobolmusic.kinsta.cloud
+    local_path: ../site
+    branch: staging
+    repo: git@github.com:kobol909/kobol.test.git
+    repo_subtree_path: site
+    multisite:
+      enabled: false
+    ssl:
+      enabled: true
+      provider: letsencrypt
+    cache:
+      enabled: false

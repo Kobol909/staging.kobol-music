@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Styling add to cart button on archive page  */
+.woocommerce .product .add_to_cart_button.button {
+  background-color: #45f45c !important;
+  color: #262626 !important;
+  padding: 12px 48px;
+}
+
+/* Styling add to cart button on archive page when on hover  */
+.woocommerce .product .add_to_cart_button.button:hover {
+  background-color: #e77c18 !important;
+  padding: 12px 48px;
+}
+
+/* Styling add to cart button on single product  */
+.single-product .product .single_add_to_cart_button.button {
+  background-color: #f4cb45 !important;
+  color: #262626 !important;
+  padding: 12px 48px;
+}
+
+/* Styling custom add to cart button  */
+.custom-add-to-cart-btn a.button {
+  background-color: #f4cb45 !important;
+  color: #262626 !important;
+  padding: 12px 48px;
+}
+
+/* To remove the ghost object in archive-product */
+.woocommerce .products ul::after,
+.woocommerce .products ul::before,
+.woocommerce ul.products::after,
+.woocommerce ul.products::before {
+  content: none !important;
+}
+
+/* Removing tabs Description & Reviews on product pages */
+
+/* .tabs.wc-tabs {
+  display: none;
+} */
+
+/* Removing tabs Description & Reviews on product pages */
+
+/* .woocommerce-tabs.wc-tabs-wrapper div h2 {
+  display: none;
+} */
+
+/* Centering product images */
+
+/* .woocommerce-product-gallery__wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 2vh;
+} */
+
+/* Centering h2 */
+
+/* .related.products h2 {
+  display: flex;
+  justify-content: center;
+} */
+
+/* Centering ul */
+
+/* .related.products ul {
+  display: flex;
+  justify-content: center;
+} */
+
+/* .woocommerce-Tabs-panel.woocommerce-Tabs-panel--description.panel.entry-content.wc-tab {
+  display: flex;
+  justify-content: center;
+} */
+
+/* Content center for privacy policy & refund policy */
+.has-text-align-center {
+  display: flex !important;
+  justify-content: center !important;
+  text-align: center !important;
+  max-width: 80% !important;
+}
+
+.woocommerce .col2-set,
+.woocommerce-page .col2-set {
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.woocommerce-form-row.woocommerce-form-row--first.form-row.form-row-first {
+  margin: 4px auto 6px;
+}
+
+.woocommerce-ResetPassword.lost_reset_password {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 2px auto;
+  width: 80%;
+}
+
+.woocommerce-form-row.woocommerce-form-row--last.form-row.form-row-last {
+  margin: 0 auto 6px !important;
+}

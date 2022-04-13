@@ -1,0 +1,16 @@
+# Created by trellis-cli v1.5.1
+# Documentation: https://docs.roots.io/trellis/master/wordpress-sites/
+
+wordpress_sites:
+  kobol.test:
+    site_hosts:
+      - canonical: kobol.test
+    local_path: ../site
+    admin_email: admin@kobol.test
+    multisite:
+      enabled: false
+    ssl:
+      enabled: false
+      provider: self-signed
+    cache:
+      enabled: false
